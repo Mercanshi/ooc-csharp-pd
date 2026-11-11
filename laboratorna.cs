@@ -31,7 +31,7 @@ namespace TriangleLab
             Console.WriteLine("✓ Трикутник існує!");
             double perimeter = a + b + c;
             Console.WriteLine($"Периметр (P): {perimeter}");
-            double p = perimeter / 2.0; // Півпериметр
+            double p = perimeter / 2.0; 
             double area = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
             Console.WriteLine($"Площа (S): {area:F2}");
             string type = DetermineTriangleType(a, b, c);
@@ -49,7 +49,7 @@ namespace TriangleLab
                 return "Рівносторонній";
             }
             double[] sides = { a, b, c };
-            Array.Sort(sides); // sides[0] i sides[1] - катети, sides[2] - гіпотенуза
+            Array.Sort(sides); 
             bool isRight = Math.Abs(Math.Pow(sides[0], 2) + Math.Pow(sides[1], 2) - Math.Pow(sides[2], 2)) < eps;
             if (sideAB || sideBC || sideAC)
             {
