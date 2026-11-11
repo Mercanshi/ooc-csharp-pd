@@ -8,8 +8,8 @@ namespace DeliveryServiceApp
     {
         public string Number { get; set; }
         public string Description { get; set; }
-        public double Weight { get; set; }    // у кг
-        public double Distance { get; set; }  // у км
+        public double Weight { get; set; }    
+        public double Distance { get; set; }  
 
         public Order(string number, string description, double weight, double distance)
         {
